@@ -22,6 +22,11 @@ header{
     margin-top: 30px;
 }
 
+.col-md-4 .nav-item-profile{ 
+  border-radius: 5px;
+  background-color: #D17A49
+}
+
 .col-md-8{
     margin-top: 30px;
 }
@@ -34,6 +39,9 @@ header{
     color:white; 
     outline-color: #D65106;
     margin-right: 20px; 
+    border-radius: 5px;
+    width: 135px;
+    height: 41px;
 }
 
 #btn_register .btn{
@@ -44,6 +52,9 @@ header{
     color:white; 
     outline-color: #D65106;
     margin-right: 20px; 
+    border-radius: 5px;
+    width: 135px;
+    height: 41px;
 }
 
 #btn_profile .btn{
@@ -69,48 +80,67 @@ header{
     height: 66px;
 }
 
+#app {
+  display: flex;
+  max-width: 100%;
+  min-height: 100vh;
+}
 
 .sidenav {
     height: 100%;  
     margin-top: 150px;
-    position: fixed;
+    position:fixed;
     z-index: 1;
     top: 0;
-    left: 0;
-    background-color: #F5F5F5;
+    transition: margin-left .5s ease-out;
     overflow-x: hidden;
-    transition: 0.5s;
+    background-color: #F5F5F5;
+    padding-left: 30px;
     padding-top: 30px;
     width : 432px;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
   }
 
-  .sidenav-hide{
-    width : 0px;
-    margin-left : 0px;
-  }
-
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-    
   #main {
-    transition: margin-left .5s;
-    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 450px;
   }
   
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+  .sidenav-hide{
+    margin-left : -432px;
+  }
+  
+  #body-profile{
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-left: 40px;
+    padding-top: 16px;
+    width: 1346px;
+    height: 468px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: whitesmoke;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
   }
 
-  
+  .awalanProfile{
+    margin-top: 40px;
+    margin-left: 400px;
+    font-family: 'Segoe UI';
+  }
+
+  #headerProfileIsi{
+    font-family: 'Segoe UI';
+    line-height: 1.5;
+    margin-top: 30px;
+    font-size: 26px;
+
+  }
+
+  #isiProfile{
+    font-family: 'Segoe UI';
+    line-height: 1.5;
+    margin-top: 30px;
+    font-size: 26px;
+  }

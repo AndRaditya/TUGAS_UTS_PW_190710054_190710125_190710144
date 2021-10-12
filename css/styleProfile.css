@@ -1,144 +1,105 @@
-
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: whitesmoke;
-}
-
-header{
-    position: relative;
-    width: 1920px;
-    height: 150px;
-    left: 0px;
-    top: 0px;
-    
-    background: #FFFFFF;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  background-color: whitesmoke;
 }
 
 .col-md-4{
-    font-family: 'Segoe UI';
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 24px;
-    margin-top: 30px;
-    padding-right: 30px;
+  font-family: 'Segoe UI';
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 24px;
+  margin-top: 30px;
+  padding-right: 30px;
 }
 
 .col-md-4 .nav-item-profile{ 
-  border-radius: 5px;
-  background-color: #D17A49
+border-radius: 5px;
+background-color: #D17A49
 }
 
-.col-md-8{
-    margin-top: 30px;
-}
-
-#btn_login .btn{
-    font-family: 'Segoe UI';
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 24px;
-    background-color: #D65106; 
-    color:white; 
-    outline-color: #D65106;
-    margin-right: 20px; 
-    border-radius: 5px;
-    width: 135px;
-    height: 41px;
-}
-
-#btn_register .btn{
-    font-family: 'Segoe UI';
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 24px;
-    background-color: #D65106; 
-    color:white; 
-    outline-color: #D65106;
-    margin-right: 20px; 
-    border-radius: 5px;
-    width: 135px;
-    height: 41px;
-}
+/* .col-md-8 #buttonSidenav{
+  margin-top: 30px;
+} */
 
 #btn_profile .btn{
-    margin-top: 24px;
-    font-family: 'Segoe UI';
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 26px;
-    background-color: #D65106; 
-    color:white; 
-    outline-color: #D65106;
-    width: 392px;
-    height: 66px;
+  margin-top: 24px;
+  font-family: 'Segoe UI';
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 26px;
+  background-color: #D65106; 
+  color:white; 
+  outline-color: #D65106;
+  width: 392px;
+  height: 66px;
 }
 
 #btn_editProfile .btn{
-    font-family: 'Segoe UI';
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 26px;
-    background-color: #D65106; 
-    color:white; 
-    outline-color: #D65106;
-    width: 392px;
-    height: 66px;
+  font-family: 'Segoe UI';
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 26px;
+  background-color: #D65106; 
+  color:white; 
+  outline-color: #D65106;
+  width: 392px;
+  height: 66px;
 }
 
 #app {
-  display: flex;
-  max-width: 100%;
-  min-height: 100vh;
+display: flex;
+max-width: 100%;
+margin-top: 100px;
 }
 
 .sidenav {
-  transition: margin-left .5s ease-out;
-  background-color: #F5F5F5;
-  padding-left: 30px;
-  padding-top: 30px;
-  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-  width: 432px;
+height: 800px;
+transition: margin-left .5s ease-out;
+background-color: #F5F5F5;
+padding-left: 30px;
+padding-top: 30px;
+box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+width: 432px;
 }
 
 #main {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  width: 100%;
-  padding: 10px 20px;
-  font-size: 36px;
+display: flex;
+flex-direction: column;
+width: 100%;
+padding: 10px 20px;
+font-size: 36px;
 }
 
 .sidenav-hide{
-  /* margin-left : -432px; */
-  margin-left: -432px;
+/* margin-left : -432px; */
+margin-left: -432px;
 }
-  
-  #body-profile{
-    border-radius: 10px;
-    margin-top: 80px;
-    margin-left: 40px;
-    padding-top: 16px;
-    width: 1346px;
-    height: 468px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: whitesmoke;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-  }
 
-  #main .awalanProfile{
-    margin-top: 16px;
-    margin-left: 400px;
-    font-family: 'Segoe UI';
-  }
+#body-profile{
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-left: 40px;
+  padding-top: 16px;
+  width: 1346px;
+  height: 468px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: whitesmoke;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
 
-  #headerProfileIsi{
-    font-family: 'Segoe UI';
-    line-height: 1.5;
-    margin-top: 30px;
-    font-size: 26px;
+#main .awalanProfile{
+  margin-top: 16px;
+  margin-left: 400px;
+  font-family: 'Segoe UI';
+}
 
-  }
+#headerProfileIsi{
+  font-family: 'Segoe UI';
+  line-height: 1.5;
+  margin-top: 30px;
+  font-size: 26px;
 
-  #isiProfile{
-    font-family: 'Segoe UI';
-    line-height: 1.5;
-    margin-top: 30px;
-    font-size: 26px;
-  }
+}
+
+#isiProfile{
+  font-family: 'Segoe UI';
+  line-height: 1.5;
+  margin-top: 30px;
+  font-size: 26px;
+}

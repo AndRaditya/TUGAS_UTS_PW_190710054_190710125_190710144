@@ -8,17 +8,6 @@ fieldset {
     object-fit: cover;
 }
 
-/* .masuk{
-    background-color: #d65106;
-    border-radius: 5px;
-    color: white !important;
-}
-
-.daftar{
-    background-color: #d65106;
-    border-radius: 5px;
-    color: white !important;
-} */
 
 .captionedit{
     top: 42%;
@@ -54,4 +43,16 @@ p{
 
 .img-fluid{ 
     border-radius: 5px;
+}
+
+.align-items-start .nav-pills .nav-link.active{
+	background: #d65106;
+}
+.align-items-start .nav-pills .nav-link{
+    margin-bottom: 8px;
+    color: black;
+}
+.align-items-start .nav-pills .nav-link:hover{
+	background: #d65106;
+	color: #ffffff;
 }

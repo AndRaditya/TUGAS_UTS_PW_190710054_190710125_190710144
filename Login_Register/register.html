@@ -11,77 +11,54 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton" />
 
-  <link rel="stylesheet" href="../css/style_register.css" />
+  <link rel="stylesheet" href="../css/style_login.css" />
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/styleBerandaMenu.css">
+  
 </head>
 
 <body class="text-center">
-  <!-- <div>
-      <nav
-        class="
-          navbar navbar-light navbar-expand-md
-          sticky-top
-          navigation-clean-button
-        "
-        style="height: 80px; color: #ffffff; background: #ff7d00"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./image/login.png" width="50px" height="50xp" />&nbsp;MAC
-            Resto
-          </a>
-          <button
-            data-bs-toggle="collapse"
-            class="navbar-toggler"
-            data-bs-target="#navcol-1"
-          >
-            <span class="visually-hidden">Toggle navigation</span>
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navcol-1">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  style="color: #ffffff"
-                  href="register.html"
-                  >Daftar</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #ffffff" href="login.html"
-                  >Masuk</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-4 mb-5 bg-white navbaredit">
+    <div class="container-fluid">
+      <div class="col-md-8">
+        <a href="../Beranda.html" style="text-decoration: none;">
+          <img src="../Images/restaurant (1).png" style="width: 64px; height:64px; margin-right: 24px;" align="left">
+          <h2 style="color: black; margin-top: 12px;"><small>MAC Resto</small></h2>
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" style="margin: 0 0 0 auto;">
+          <li class="nav-item ">
+            <a class="nav-link" href="../Tampil/Beranda.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Menu/Menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Profile/Profile.html">Profil</a>
+          </li>
+          <li class="nav-item masuk">
+            <a class="nav-link" href="../Login_Register/login.html">Masuk</a>
+          </li>
+          <li class="nav-item daftar active a">
+            <a class="nav-link" href="../Login_Register/register.html">Daftar</a>
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <section
-      class="login-clean"
-      style="
-        width: 100%;
-        background: rgb(241, 247, 252);
-        padding: 75px;
-        height: 100%;
-        padding-top: 20px;
-      "
-    > -->
-
+  </nav>
 
   <!-- REGISTER FORM -->
+  
   <h1 style="margin-bottom: 40px; font-family: Anton, sans-serif">
     Daftar Sekarang
   </h1>
-  <form method="post" style="
-          width: 500px;
-          min-width: 100px;
-          max-width: 500px;
-          height: fit-content;
-          padding: 50px;
-          padding-top: 10px;
-        ">
+  <div class="tengah">
+  <form method="post">
     <img src="../Images/register.png" style="width: 130px; height: 130px; margin-bottom: 25px" />
     <div class="mb-3">
       <p class="text-start" style="margin-bottom: 5px; padding-left: 10px">
@@ -111,7 +88,7 @@
       <p class="text-start" style="margin-bottom: 5px; padding-left: 10px">
         <strong>Password</strong>
       </p>
-      <input class="form-control" type="password" name="username" required="" />
+        <input class="form-control" type="password" name="username" required="" />
     </div>
 
     <div class="mb-3">
@@ -121,12 +98,13 @@
     </div>
     <div class="d-block float-none">
       <span class="d-table-cell" style="font-size: 12px">Sudah punya akun?</span>
-      <a class="text-start d-table-cell forgot" href="../Login_Register/login.html" style="width: 111px; color: var(--bs-blue)">
+      <a class="text-start d-table-cell forgot" href="../Login_Register/login.html" 
+      style="width: 111px; color: var(--bs-blue)">
         <span style="text-decoration: underline">Login Disini!</span>
       </a>
     </div>
   </form>
+  </div>
   </section>
 </body>
-
 </html>

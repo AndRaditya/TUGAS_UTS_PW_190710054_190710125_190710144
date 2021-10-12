@@ -1,3 +1,7 @@
+fieldset {
+    width: fit-content;
+}
+
 .navbaredit{
     padding: 25px 25px !important;
     font-weight: bold;

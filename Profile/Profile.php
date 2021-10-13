@@ -53,11 +53,11 @@
 
     <div id="app">
         <div id="mySidenav" class="sidenav">
-            <div class="col-md-12" style="height: 114px;">
-                <img src="../Images/user.png" style="width: 114px; height:114px; margin-right: 14px; margin-left: 24px;"
-                    align="left">
-                <h2 style="color: black; font-size: 26px; padding-top: 20px;">Hello, </h2>
-                <p style="color: black; font-size: 24px;">Candra Pangi Hutan</p>
+            <div class="col-md-12" style="height: 114px; ">
+                <!-- <img src="../Images/user.png" style="width: 85px; height:85px; margin-right: 14px; margin-left: 10px;"
+                    align="left"> -->
+                <h2 style="color: black; font-size: 24px; padding-top: 20px; font-style: bold;">Hello, </h2>
+                <p style="color: black; font-size: 20px;">Candra Pangi Hutan</p>
             </div>
 
             <div class="col-md-8" id="buttonSidenav">

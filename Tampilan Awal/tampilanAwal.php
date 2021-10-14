@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="
-        sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- <link href="style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../css/tampilanAwal.css">
     <link rel="stylesheet" href="../css/navbar.css">
-    <title>MAC - Resto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <title>MAC Resto - Beranda</title>
 </head>
 
 <body>
@@ -29,15 +31,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav" style="margin: 0 0 0 auto;">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Beranda.html">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Menu/Menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item active a">
-                        <a class="nav-link" href="../Profile/Profile.html">Profil</a>
-                    </li>
                     <li class="nav-item masuk">
                         <a class="nav-link" href="../Login_Register/login.html">Masuk</a>
                     </li>
@@ -49,56 +42,56 @@
         </div>
     </nav>
 
-    <div class="bg">
-        <div class="container min-vh-100 d-flex align-items-center">
-            <div id="carouselExampleCaptions" class="carousel slide carouseledit" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+    <div id="carouselExampleCaptions" class="carousel slide carouseledit" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner carouseledit img">
+            <div class="carousel-item active">
+                <img src="../Images/homeslide1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block captionedit">
+                    <h1><strong>Selamat Datang!</strong></h1>
+                    <p>Selamat menikmati menu di MAC Resto!</p>
                 </div>
-                <div class="carousel-inner carouseledit img">
-                    <div class="carousel-item active">
-                        <img src="Images/homeslide1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-md-block captionedit">
-                            <h1><strong>Selamat Datang!</strong></h1>
-                            <p>Selamat menikmati menu di MAC Resto!</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Images/homeslide2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-md-block captionedit">
-                            <h1><strong>Selamat Datang!</strong></h1>
-                            <p>Selamat menikmati menu di MAC Resto!</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Images/homeslide3.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-md-block captionedit">
-                            <h1><strong>Selamat Datang!</strong></h1>
-                            <p>Selamat menikmati menu di MAC Resto!</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../Images/homeslide2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block captionedit">
+                    <h1><strong>Selamat Datang!</strong></h1>
+                    <p>Selamat menikmati menu di MAC Resto!</p>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </div>
+            <div class="carousel-item">
+                <img src="../Images/homeslide3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block captionedit">
+                    <h1><strong>Selamat Datang!</strong></h1>
+                    <p>Selamat menikmati menu di MAC Resto!</p>
+                </div>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-
-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!-- Optional JavaScript
+             jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
 
 </body>
 

@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <title>Candra</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Candra</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton" />
 
-  <link rel="stylesheet" href="../css/styleProfile.css" />
-  <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/styleEditProfile.css" />
+    <link rel="stylesheet" href="../css/navbar.css">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                         <a class="nav-link" href="../Menu/Menu.html">Menu</a>
                     </li>
                     <li class="nav-item active a">
-                        <a class="nav-link" href="../Profile/Profile.html">Profil</a>
+                        <a class="nav-link" href="../Profile/Profile.php">Profil</a>
                     </li>
                     <li class="nav-item masuk">
                         <a class="nav-link" href="../Login_Register/login.html">Masuk</a>
@@ -53,10 +53,10 @@
 
     <div id="app">
         <div id="mySidenav" class="sidenav">
-            <div class="col-md-12" style="height: 114px; ">
-                <!-- <img src="../Images/user.png" style="width: 85px; height:85px; margin-right: 14px; margin-left: 10px;"
-                    align="left"> -->
-                <h2 style="color: black; font-size: 24px; padding-top: 20px; font-style: bold;">Hello, </h2>
+            <div class="col-md-12" style="height: 114px;">
+                <img src="../Images/user.png" style="width: 85px; height:85px; margin-right: 14px; margin-left: 10px;"
+                    align="left">
+                <h2 style="color: black; font-size: 24px; padding-top: 20px;">Hello, </h2>
                 <p style="color: black; font-size: 20px;">Candra Pangi Hutan</p>
             </div>
 
@@ -78,33 +78,55 @@
         </div>
 
         <div id="main">
-            <span style="cursor: pointer;"onclick="toogleSidebar()">&#9776; </span>
+            <span onclick="toogleSidebar()">&#9776; </span>
             <div></div>
             <div></div>
             <div></div>
             <div class="container-fluid" id="body-profile">
-                <img src="../Images/user.png" style="height: 277px; width: 277px; margin-left: 40px; margin-top: 40px;"
-                    align="left">
+                <div class="column" id="containerFoto">
+                    <img src="../Images/user.png"
+                        style="height: 277px; width: 277px; margin-left: 40px; margin-top: 40px;" align="left">
+                    <button id="buttonGantiFoto">
+                        Ganti Foto
+                    </button>
+                </div>
                 <div class="awalanProfile">
                     <h2 class="header">Profile</h2>
-                    <div class="row">
-                        <div class="col-lg-4" id="headerProfileIsi">
-                            <p>Nama</p>
-                            <p>Email</p>
-                            <p>Nomor Telepon</p>
-                            <p>Username</p>
+                    <div class="row g-3" style="margin-top: 16px;">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <h2>Nama</h2>
+                                <input type="text" class="form-control" name="Nama" placeholder="Masukkan Nama">
+                            </div>
                         </div>
-                        <div class="col-lg-6" id="isiProfile">
-                            <p>Candra Pangi Hutan Sida Balok</p>
-                            <p>Candra@gmail.com</p>
-                            <p>0812 1234 1234</p>
-                            <p>CandraPangi</p>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <h2>Email</h2>
+                                <input type="email" class="form-control" name="Email" placeholder="Masukkan Email">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <h2>Nomor Telepon</h2>
+                                <input type="text" class="form-control" name="phoneNumber"
+                                    placeholder="Masukkan Nomor Telepon">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <h2>Username</h2>
+                                <input type="text" class="form-control" name="username" placeholder="Masukkan Username">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 mt-5 text-center">
+                            <button class="btn btn-primary" type="submit" id="buttonSubmitProfile">
+                                Submit
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
 

@@ -81,7 +81,7 @@ body {
 #main {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+    /* cursor: pointer; */
     width: 100%;
     padding: 10px 20px;
     font-size: 36px;

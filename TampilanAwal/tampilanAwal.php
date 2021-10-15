@@ -19,11 +19,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-4 mb-5 bg-white navbaredit">
         <div class="container-fluid">
             <div class="col-md-8">
-                <a href="../Beranda.html" style="text-decoration: none;">
-                    <img src="../Images/restaurant (1).png" style="width: 64px; height:64px; margin-right: 24px;"
-                        align="left">
-                    <h2 style="color: black; margin-top: 12px;"><small>MAC Resto</small></h2>
-                </a>
+                <img src="../Images/restaurant (1).png" style="width: 64px; height:64px; margin-right: 24px;"
+                    align="left">
+                <h2 style="color: black; margin-top: 12px;"><small>MAC Resto</small></h2>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,10 +30,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav" style="margin: 0 0 0 auto;">
                     <li class="nav-item masuk">
-                        <a class="nav-link" href="../Login_Register/login.html">Masuk</a>
+                        <a class="nav-link" href="../Login_Register/loginPage.php">Masuk</a>
                     </li>
                     <li class="nav-item daftar">
-                        <a class="nav-link" href="../Login_Register/register.html">Daftar</a>
+                        <a class="nav-link" href="../Login_Register/registerPage.php">Daftar</a>
                     </li>
                 </ul>
             </div>

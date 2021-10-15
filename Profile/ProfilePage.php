@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    include('../db/db.php');  
+    $username = $_SESSION['username'];
+    $query = mysqli_query($con, "SELECT * FROM users WHERE username = '$username'") or die(mysqli_error($con));
+    $user = mysqli_fetch_assoc($query);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,21 +26,21 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-4 mb-5 bg-white navbaredit">
         <div class="container-fluid">
-            <div class="col-md-8" id>
-                <a href="../Beranda.html" style="text-decoration: none;">
+            <div class="col-md-8">
+                <a href="../Beranda.php" style="text-decoration: none;">
                     <img src="../Images/restaurant (1).png" style="width: 64px; height:64px; margin-right: 24px;"
                         align="left">
                     <h2 style="color: black; margin-top: 12px;"><small>MAC Resto</small></h2>
                 </a>
-              </div>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav" style="margin: 0 0 0 auto;">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Beranda.html">Beranda</a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../Beranda.php">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Menu/Menu.html">Menu</a>
@@ -40,11 +48,8 @@
                     <li class="nav-item active a">
                         <a class="nav-link" href="../Profile/Profile.php">Profil</a>
                     </li>
-                    <li class="nav-item masuk">
-                        <a class="nav-link" href="../Login_Register/login.html">Masuk</a>
-                    </li>
-                    <li class="nav-item daftar">
-                        <a class="nav-link" href="../Login_Register/register.html">Daftar</a>
+                    <li class="nav-item" style="margin-left: 16px">
+                        <a class="nav-link" href="../process/logoutProcess.php">Keluar</a>
                     </li>
                 </ul>
             </div>
@@ -54,21 +59,19 @@
     <div id="app">
         <div id="mySidenav" class="sidenav">
             <div class="col-md-12" style="height: 114px; ">
-                <!-- <img src="../Images/user.png" style="width: 85px; height:85px; margin-right: 14px; margin-left: 10px;"
-                    align="left"> -->
                 <h2 style="color: black; font-size: 24px; padding-top: 20px; font-style: bold;">Hello, </h2>
-                <p style="color: black; font-size: 20px;">Candra Pangi Hutan</p>
+                <p style="color: black; font-size: 20px;"> <?php echo $user['name'] ?> </p>
             </div>
 
             <div class="col-md-8" id="buttonSidenav">
-                <a href="../Profile/Profile.html" id="btn_profile">
+                <a href="../Profile/ProfilePage.php" id="btn_profile">
                     <button class="btn btn-light"
                         style="margin-right: 20px; background-color: #D65106; color:white; outline-color: #D65106;">
                         Profile
                     </button>
                 </a>
 
-                <a href="../Profile/EditProfile.html" id="btn_editProfile">
+                <a href="../Profile/EditProfilePage.php" id="btn_editProfile">
                     <button class="btn btn-light"
                         style="margin-right: 20px; background-color: #D65106; color:white; outline-color: #D65106;">
                         Edit Profile
@@ -85,45 +88,18 @@
             <div class="container-fluid" id="body-profile">
                 <div class="awalanProfile">
                     <h2 class="header">Profile</h2>
-                    <?php
-                    $query = mysqli_query($con, "SELECT * FROM users") or die(mysqli_error($con));
-                
-                    if (mysqli_num_rows($query) == 0) {
-                        echo '<tr> <td colspan="7"> Tidak ada data </td> </tr>';
-                    }else{
-                        $no = 1;
-                        while($data = mysqli_fetch_assoc($query)){
-                        echo'
-                                <tr>
-                                    <th scope="row">'.$no.'</th>
-                                    <td>'.$data['name'].'</td>
-                                    <td>'.$data['npm'].'</td>
-                                    <td>'.$data['prodi'].'</td>
-                                    <td>
-                                        <a href="./editPesertaPage.php?id='.$data['id'].'">
-                                            <i style="color: green" class="fa fa-edit"></i></a>
-                                        <a href="../process/deleteMahasiswaProcess.php?id='.$data['id'].'"
-                                            onClick="return confirm ( \'Yakin?\')">
-                                            <i style="color: red" class="fa fa-trash"></i>
-                                        </a>
-                                    </td>
-                                </tr>';
-                            $no++;
-                            }
-                        }
-                    ?>
                     <div class="row">
-                        <div class="col-lg-4" id="headerProfileIsi">
-                            <p>Nama</p>
-                            <p>Email</p>
-                            <p>Nomor Telepon</p>
-                            <p>Username</p>
+                        <div class="col-lg-4 row" id="headerProfileIsi">
+                            <b style="font-size: 20px;">Nama</b>
+                            <b style="font-size: 20px;">Email</b>
+                            <b style="font-size: 20px;">Nomor Telepon</b>
+                            <b style="font-size: 20px;">Username</b>
                         </div>
                         <div class="col-lg-6" id="isiProfile">
-                            <p>Candra Pangi Hutan Sida Balok</p>
-                            <p>Candra@gmail.com</p>
-                            <p>0812 1234 1234</p>
-                            <p>CandraPangi</p>
+                            <p style="font-size: 20px"><?php echo $user['name'] ?></p>
+                            <p style="font-size: 20px"><?php echo $user['email'] ?></p>
+                            <p style="font-size: 20px"><?php echo $user['nomor_telepon'] ?></p>
+                            <p style="font-size: 20px"><?php echo $user['username'] ?></p>
                         </div>
                     </div>
                 </div>

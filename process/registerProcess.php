@@ -8,26 +8,26 @@
         // sesuaikan variabel name yang ada di registerPage.php disetiap input
         $username = $_POST['username'];
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-        $nama_lengkap = $_POST['nama_lengkap'];
+        $name = $_POST['name'];
         $email = $_POST['email'];
-        $nomor_telp = $_POST['nomor_telp'];
+        $nomor_telepon = $_POST['nomor_telepon'];
 
         // Melakukan insert ke databse dengan query dibawah ini
         $query = mysqli_query($con,
-            "INSERT INTO users(username, password, nama_lengkap, email, nomor_telp)
+            "INSERT INTO users(username, password, name, email, nomor_telepon)
                 VALUES
-            ('$username', '$password', '$nama_lengkap', '$email', '$nomor_telp')")
+            ('$username', '$password', '$name', '$email', '$nomor_telepon')")
                 or die(mysqli_error($con)); // perintah mysql yang gagal dijalankan ditangan oleh perintah “or die”
     
                 if($query){
                     echo
                         '<script>
-                        alert("Create Data Success"); window.location = "../page/listMahasiswaPage.php"
+                        alert("Register Success"); window.location = "../TampilanAwal/tampilanAwal.php"
                         </script>';
                 }else{
                     echo
                         '<script>
-                        alert("Create Data Failed");
+                        alert("Register Failed");
                         </script>';
                 }
     }else{

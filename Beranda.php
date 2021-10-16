@@ -41,7 +41,7 @@
                         <a class="nav-link" href="./Profile/ProfilePage.php">Profil</a>
                     </li>
                     <li class="nav-item" style="margin-left: 16px">
-                        <a class="nav-link" href="./process/logoutProcess.php">Keluar</a>
+                        <a class="nav-link" href="../process/logoutProcess.php">Keluar</a>
                     </li>
                 </ul>
             </div>
@@ -59,21 +59,21 @@
         </div>
         <div class="carousel-inner carouseledit img">
             <div class="carousel-item active">
-                <img src="Images/homeslide1.jpg" class="d-block w-100" alt="...">
+                <img src="Images/carousel1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-md-block captionedit">
                     <h1><strong>Selamat Datang!</strong></h1>
                     <p>Selamat menikmati menu di MAC Resto!</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="Images/homeslide2.jpg" class="d-block w-100" alt="...">
+                <img src="Images/carousel2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-md-block captionedit">
                     <h1><strong>Selamat Datang!</strong></h1>
                     <p>Selamat menikmati menu di MAC Resto!</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="Images/homeslide3.jpg" class="d-block w-100" alt="...">
+                <img src="Images/carousel3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-md-block captionedit">
                     <h1><strong>Selamat Datang!</strong></h1>
                     <p>Selamat menikmati menu di MAC Resto!</p>

@@ -15,8 +15,8 @@
                 session_start();
                 $_SESSION['isLogin'] = true;
                 $_SESSION['user'] = $user;
-    
-                header("location: ../Beranda.php");
+
+                echo '<script>alert("Login Success"); window.location = "../Beranda.php"</script>';
             }else {
                 echo "VERIFIKASI EMAIL TERLEBIH DAHULU";
             }

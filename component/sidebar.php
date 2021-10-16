@@ -27,7 +27,7 @@
             }
             .side-bar {
                 width: 260px;
-                background-color: #16347A;
+                background-color: #d65106;
                 min-height: 100vh;
             }
 
@@ -45,8 +45,8 @@
                 padding: 9px 7px;
             }
             .isActive {
-                background-color: #071853 !important;
-                border-right: 8px solid #010E2F;
+                background-color: #edc0a6 !important;
+                border-right: 8px solid #e3c9ba;
             }
             i{
                 color:white;
@@ -62,15 +62,15 @@
                     <hr>
                     <div class="menu">
                         <div class="content-menu " >
-                            <i class="fa fa-list"></i>
+                            <i class="fa fa-list-alt"></i>
                             <a href="../Menu/listPesananPage.php" style="font-weight:600">Daftar Pesanan</a>
                         </div>
                         <div class="content-menu " >
-                            <i class="fa fa-plus-square"></i>
+                            <i class="fa fa-plus-square-o"></i>
                             <a href="../Menu/addPesananPage.php" style="font-weight:600">Tambah Pesanan</a>
                         </div>
                         <div class="content-menu " >
-                            <i class="fa fa-plus-square"></i>
+                            <i class="fa fa-cutlery"></i>
                             <a href="../Menu/Menu.html" style="font-weight:600">Kembali ke Menu</a>
                         </div>
                     <hr>

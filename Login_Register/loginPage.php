@@ -16,31 +16,24 @@
 <body class="text-center">
     <!-- navbar lama -->
     <div>
-      <nav
-        class="
+        <nav class="
           navbar navbar-light navbar-expand-md
           sticky-top
           navigation-clean-button
-        "
-        style="height: 80px; color: #ffffff; background: #ff7d00"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../image/resto.png" width="50px" height="50xp" />&nbsp;MAC
-            Resto
-          </a>
-          <button
-            data-bs-toggle="collapse"
-            class="navbar-toggler"
-            data-bs-target="#navcol-1"
-          >
-            <span class="visually-hidden">Toggle navigation</span>
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navcol-1">
-          </div>
-        </div>
-      </nav>
+        " style="height: 80px; color: #ffffff; background: #ff7d00">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../image/resto.png" width="50px" height="50xp" />&nbsp;MAC
+                    Resto
+                </a>
+                <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                </div>
+            </div>
+        </nav>
     </div>
     <section class="login-clean" style="
         width: 100%;

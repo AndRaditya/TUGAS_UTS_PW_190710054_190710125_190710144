@@ -2,7 +2,8 @@
     session_start();
     include('../db/db.php');  
     $username = $_SESSION['username'];
-    $query = mysqli_query($con, "SELECT * FROM users WHERE username = '$username'") or die(mysqli_error($con));
+    $query = mysqli_query($con, "SELECT * FROM users WHERE username = '$username'") 
+    or die(mysqli_error($con));
     $user = mysqli_fetch_assoc($query);
 ?>
 

@@ -1,6 +1,7 @@
 <?php
     session_start();
     include('../db/db.php');  
+    $id = $_GET['id'];
     $username = $_SESSION['username'];
     $query = mysqli_query($con, "SELECT * FROM users WHERE username = '$username'") or die(mysqli_error($con));
     $user = mysqli_fetch_assoc($query);
@@ -20,7 +21,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-4 mb-5 bg-white navbaredit">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-4 mb-5 bg-white navbaredit">
         <div class="container-fluid">
             <div class="col-md-8">
                 <a href="../Beranda.php" style="text-decoration: none;">
@@ -82,7 +83,8 @@
             <div></div>
             <div></div>
             <div class="container-fluid" id="body-profile">
-                <form action="../process/editProfileProcess.php?id=$id" method="post">
+                <form action="../process/editProfileProcess.php" method="post">
+                    <input type="text" name="id" value="<?= $user['id'];?>" hidden>
                     <div class="awalanProfile">
                         <h2 class="header">Profile</h2>
                         <div class="row g-3" style="margin-top: 16px;">
@@ -96,28 +98,37 @@
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
                                     <h2>Email</h2>
-                                    <input class="form-control" id="email" name="email" aria-describedby="emailHelp" type="email"
-                                        value="<?php echo $user['email']; ?>" required>
+                                    <input class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                                        type="email" value="<?php echo $user['email']; ?>" required>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
                                     <h2>Nomor Telepon</h2>
-                                    <input class="form-control" id="nomor_telepon" name="nomor_telepon" aria-describedby="emailHelp"
-                                        value="<?php echo $user['nomor_telepon']; ?>" required>
+                                    <input class="form-control" id="nomor_telepon" name="nomor_telepon"
+                                        aria-describedby="emailHelp" value="<?php echo $user['nomor_telepon']; ?>"
+                                        required>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
                                     <h2>Username</h2>
-                                    <input class="form-control" id="username" name="username" aria-describedby="emailHelp"
-                                        value="<?php echo $user['username']; ?>" required>
+                                    <input class="form-control" id="username" name="username"
+                                        aria-describedby="emailHelp" value="<?php echo $user['username']; ?>" required>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12 mt-5 text-center">
-                                <button class="btn btn-primary" type="submit" id="buttonSubmitProfile">
+                                <button class="btn btn-primary" type="submit" style="margin-bottom: 16px;" value="edit"
+                                    name="edit">
                                     Submit
                                 </button>
+                                <a href="../process/deleteUserProcess.php?id=<?php $user['id'] ?>"
+                                    value="<?php echo $user['delete']; ?>">
+                                    <button class="btn btn-secondary" type="submit" style="background-color: #FF0000; 
+                                    outline-color: #FF0000" name="delete">
+                                        Delete
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>

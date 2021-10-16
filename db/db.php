@@ -3,7 +3,7 @@
     $host = "localhost";
     $user = "root";
     $pass = "";
-    $name = "MAC_Resto";
+    $name = "mac_resto";
 
     $con = mysqli_connect($host, $user, $pass, $name);
 

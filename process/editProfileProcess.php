@@ -1,6 +1,6 @@
 <?php
-    if(isset($_POST['id'])){
-        include ('../db.php');
+    if(isset($_POST['edit'])){
+        include ('../db/db.php');
         $id = $_POST['id'];
         $username = $_POST['username'];
         // $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
@@ -10,6 +10,7 @@
 
         $queryEdit=mysqli_query($con, "UPDATE users SET username='$username', 
             name='$name', email='$email', nomor_telepon='$nomor_telepon' WHERE id=$id");
+
         if($queryEdit){
             echo
                 '<script>

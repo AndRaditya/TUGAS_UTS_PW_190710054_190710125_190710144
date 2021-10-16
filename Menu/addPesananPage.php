@@ -9,9 +9,9 @@
             <form action="../process/createPesananProcess.php" method="post">
             <input type="text" name="id" value="<?= $user['id'];?>" hidden>
                 <div class="mb-3">
-                    <label for="validationNama" class="form-label">Nama Pemesan</label>
+                    <label for="nama_pemesan" class="form-label">Nama Pemesan</label>
                         <div class="input-group has-validation">
-                            <input type="text" class="form-control" id="validationNama" name="nama_pemesan" 
+                            <input type="text" class="form-control" id="nama_pemesan" name="nama_pemesan" 
                             placeholder="Nama Pemesan" aria-describedby="inputGroupPrepend" required>
                                 <div class="invalid-feedback">
                                     Namanya jangan lupa diisi!
@@ -20,9 +20,9 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="validationNoMeja" class="form-label">Nomor Meja</label>
+                    <label for="no_meja" class="form-label">Nomor Meja</label>
                         <div class="input-group has-validation">
-                            <input type="text" class="form-control" id="validationNoMeja" name="no_meja" 
+                            <input type="text" class="form-control" id="no_meja" name="no_meja" 
                             placeholder="Nomor meja yang ditempati" aria-describedby="inputGroupPrepend" required>
                                 <div class="invalid-feedback">
                                     Jangan lupa isi Nomor Meja!
@@ -31,8 +31,8 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="validationMakanan" class="form-label">Makanan</label>
-                        <select class="form-select" id="validationMakanan" name="makanan" required>
+                    <label for="makanan" class="form-label">Makanan</label>
+                        <select class="form-select" id="makanan" name="makanan" required>
                             <option selected disabled value="">Pilih Makanan</option>
                             <option>-</option>
                             <option>Nasi Goreng</option>
@@ -48,9 +48,9 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="validationJumlahMakanan" class="form-label">Jumlah Makanan</label>
+                    <label for="jumlah_makanan" class="form-label">Jumlah Makanan</label>
                         <div class="input-group has-validation">
-                            <input type="text" class="form-control" id="validationJumlahMakanan" name="jumlah_makanan" 
+                            <input type="text" class="form-control" id="jumlah_makanan" name="jumlah_makanan" 
                             placeholder="1, 2, 3, dst." aria-describedby="inputGroupPrepend" required>
                                 <div class="invalid-feedback">
                                     Jangan lupa isi jumlah makanannya!
@@ -59,9 +59,9 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="validationKeteranganMakanan" class="form-label">Keterangan Makanan yang Dipesan</label>
+                    <label for="keterangan_makanan" class="form-label">Keterangan Makanan yang Dipesan</label>
                         <div class="input-group has-validation">
-                            <input type="text" class="form-control" id="validationKeteranganMakanan" name="keterangan_makanan" 
+                            <input type="text" class="form-control" id="keterangan_makanan" name="keterangan_makanan" 
                             placeholder="Contoh: Tidak pedas. Tidak ada keterangan = -" aria-describedby="inputGroupPrepend" required>
                                 <div class="invalid-feedback">
                                     Jangan lupa isi!
@@ -70,8 +70,8 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="validationMinuman" class="form-label">Minuman</label>
-                        <select class="form-select" id="validationMinuman" name="minuman" required>
+                    <label for="minuman" class="form-label">Minuman</label>
+                        <select class="form-select" id="minuman" name="minuman" required>
                             <option selected disabled value="">Pilih Minuman</option>
                             <option>-</option>
                             <option>Air Mineral</option>
@@ -84,9 +84,9 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="validationJumlahMinuman" class="form-label">Jumlah Minuman</label>
+                    <label for="jumlah_minuman" class="form-label">Jumlah Minuman</label>
                         <div class="input-group has-validation">
-                            <input type="text" class="form-control" id="validationJumlahMinuman" name="jumlah_minuman" 
+                            <input type="text" class="form-control" id="jumlah_minuman" name="jumlah_minuman" 
                             placeholder="1, 2, 3, dst." aria-describedby="inputGroupPrepend" required>
                                 <div class="invalid-feedback">
                                     Jangan lupa isi jumlah minumannya!
@@ -95,9 +95,9 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="validationKeteranganMinuman" class="form-label">Keterangan Minuman yang Dipesan</label>
+                    <label for="keterangan_minuman" class="form-label">Keterangan Minuman yang Dipesan</label>
                         <div class="input-group has-validation">
-                            <input type="text" class="form-control" id="validationKeteranganMinuman" name="keterangan_minuman" 
+                            <input type="text" class="form-control" id="keterangan_minuman" name="keterangan_minuman" 
                             placeholder="Contoh: Tidak pakai es. Tidak ada keterangan = -" aria-describedby="inputGroupPrepend" required>
                                 <div class="invalid-feedback">
                                     Jangan lupa isi!

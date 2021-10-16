@@ -5,17 +5,17 @@
         $id_pesanan = $_GET['id_pesanan'];
         $nama_pemesan = $_POST['nama_pemesan'];
         $no_meja = $_POST['no_meja'];
-        $makanan = $_POST['validationMakanan'];
-        $jumlah_makanan = $_POST['validationJumlahMakanan'];
-        $keterangan_makanan = $_POST['validationKeteranganMakanan'];
-        $minuman = $_POST['validationMinuman'];
-        $jumlah_minuman = $_POST['validationJumlahMinuman'];
-        $keterangan_minuman = $_POST['validationKeteranganMinuman'];
+        $makanan = $_POST['makanan'];
+        $jumlah_makanan = $_POST['jumlah_makanan'];
+        $keterangan_makanan = $_POST['keterangan_makanan'];
+        $minuman = $_POST['minuman'];
+        $jumlah_minuman = $_POST['jumlah_minuman'];
+        $keterangan_minuman = $_POST['keterangan_minuman'];
                         
         $queryEdit = mysqli_query($con, 
-        "UPDATE pesananan SET validationNama='$nama_pemesan', validationNoMeja='$no_meja', validationMakanan='$makanan', 
-        validationJumlahMakanan='$jumlah_makanan', validationKeteranganMakanan='$keterangan_makanan', validationMakanan='$makanan', 
-        validationJumlahMakanan='$jumlah_makanan', validationKeteranganMakanan='$keterangan_makanan' WHERE id=$id_pesanan") 
+        "UPDATE pesananan SET nama_pemesan='$nama_pemesan', no_meja='$no_meja', makanan='$makanan', 
+        jumlah_makanan='$jumlah_makanan', keterangan_makanan='$keterangan_makanan', minuman='$minuman',
+        jumlah_minuman='$jumlah_minuman', keterangan_minuman='$keterangan_minuman' WHERE id=$id_pesanan") 
             or die(mysqli_error($con));
         if($queryEdit){           
             echo                 

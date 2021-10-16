@@ -40,7 +40,6 @@
                             <td>'.$data['keterangan_makanan'].'</td>
                             <td>'.$data['minuman'].'</td>
                             <td>'.$data['keterangan_minuman'].'</td>
-                            <td>'.$data['validationKeteranganMinuman'].'</td>
                             <td>
                             
                                 <a href="../page/updatePesananPage.php?id='.$data['id'].'">
@@ -51,7 +50,8 @@
                                     <i style="color: red" class="fa fa-trash"></i>
                                 </a>
                             </td>
-                        </tr>';
+                        </tr>
+                        ';
                     $no++;
                     }
                 }

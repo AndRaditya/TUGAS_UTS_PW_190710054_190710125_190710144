@@ -63,15 +63,15 @@
                     <div class="menu">
                         <div class="content-menu " >
                             <i class="fa fa-list"></i>
-                            <a href="../Menu/listPesananPage.php" style="font-weight:600">List Mahasiswa</a>
+                            <a href="../Menu/listPesananPage.php" style="font-weight:600">Daftar Pesanan</a>
                         </div>
                         <div class="content-menu " >
                             <i class="fa fa-plus-square"></i>
-                            <a href="../Menu/addPesananPage.php" style="font-weight:600">Add Mahasiswa</a>
+                            <a href="../Menu/addPesananPage.php" style="font-weight:600">Tambah Pesanan</a>
                         </div>
                         <div class="content-menu " >
                             <i class="fa fa-plus-square"></i>
-                            <a href="../Menu/Menu.html" style="font-weight:600">Menu</a>
+                            <a href="../Menu/Menu.html" style="font-weight:600">Kembali ke Menu</a>
                         </div>
                     <hr>
                 </div>

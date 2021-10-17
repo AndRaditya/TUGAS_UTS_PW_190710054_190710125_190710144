@@ -1,16 +1,20 @@
 <?php
     session_start();
-    include('../db/db.php');  
-    $id = $_GET['id'];
-    $username = $_SESSION['username'];
-    $query = mysqli_query($con, "SELECT * FROM users WHERE username = '$username'") or die(mysqli_error($con));
-    $user = mysqli_fetch_assoc($query);
+    if (!$_SESSION['isLogin']) {
+        header("location: ../Login_Register/loginPage.php");
+    }else {
+        include('../db/db.php');  
+        $id = $_GET['id'];
+        $username = $_SESSION['username'];
+        $query = mysqli_query($con, "SELECT * FROM users WHERE username = '$username'") or die(mysqli_error($con));
+        $user = mysqli_fetch_assoc($query);
+    }
 ?>
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <title>Candra</title>
+    <title>MAC Resto - Edit Profile</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -40,7 +44,7 @@
                         <a class="nav-link" href="../Beranda.php">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Menu/Menu.html">Menu</a>
+                        <a class="nav-link" href="../Menu/Menu.php">Menu</a>
                     </li>
                     <li class="nav-item active a">
                         <a class="nav-link" href="../Profile/Profile.php">Profil</a>
@@ -53,10 +57,10 @@
         </div>
     </nav>
 
-    <div id="app">
+    <div id="app" style="margin-top: 55px">
         <div id="mySidenav" class="sidenav">
-            <div class="col-md-12" style="height: 114px;">
-                <h2 style="color: black; font-size: 24px; padding-top: 20px;">Hello, </h2>
+            <div class="col-md-12" style="height: 114px; ">
+                <h2 style="color: black; font-size: 24px; padding-top: 20px; font-style: bold;">Hello, </h2>
                 <p style="color: black; font-size: 20px;"> <?php echo $user['name'] ?> </p>
             </div>
 
@@ -78,33 +82,33 @@
         </div>
 
         <div id="main">
-            <span onclick="toogleSidebar()">&#9776; </span>
+            <span  style="cursor: pointer;" onclick="toogleSidebar()">&#9776; </span>
             <div></div>
             <div></div>
             <div></div>
-            <div class="container-fluid" id="body-profile">
+            <div class="container-fluid" id="body-profile" style="margin-top: 16px; margin-left: 16px;">
                 <form action="../process/editProfileProcess.php" method="post">
                     <input type="text" name="id" value="<?= $user['id'];?>" hidden>
-                    <div class="awalanProfile">
+                    <div class="awalanProfile" style="margin-left: 48px; margin-top: 16px">
                         <h2 class="header">Profile</h2>
-                        <div class="row g-3" style="margin-top: 16px;">
+                        <div class="row g-3">
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
-                                    <h2>Nama</h2>
+                                    <b style="font-size: 20px;">Nama</b>
                                     <input class="form-control" id="name" name="name" aria-describedby="emailHelp"
                                         value="<?php echo $user['name']; ?>" required>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
-                                    <h2>Email</h2>
+                                    <b style="font-size: 20px;">Email</b>
                                     <input class="form-control" id="email" name="email" aria-describedby="emailHelp"
                                         type="email" value="<?php echo $user['email']; ?>" required>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
-                                    <h2>Nomor Telepon</h2>
+                                    <b style="font-size: 20px;">Nomor Telepon</b>
                                     <input class="form-control" id="nomor_telepon" name="nomor_telepon"
                                         aria-describedby="emailHelp" value="<?php echo $user['nomor_telepon']; ?>"
                                         required>
@@ -112,22 +116,18 @@
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
-                                    <h2>Username</h2>
+                                    <b style="font-size: 20px;">Username</b>
                                     <input class="form-control" id="username" name="username"
                                         aria-describedby="emailHelp" value="<?php echo $user['username']; ?>" required>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12 mt-5 text-center">
-                                <button class="btn btn-primary" type="submit" style="margin-bottom: 16px;" value="edit"
-                                    name="edit">
-                                    Submit
+                                <button class="btn btn-primary" type="submit" value="edit"
+                                    name="edit" style="width: 250px;" onclick="showAlertEdit()">
+                                    Edit Akun
                                 </button>
-                                <a href="../process/deleteUserProcess.php?id=<?php $user['id'] ?>"
-                                    value="<?php echo $user['delete']; ?>">
-                                    <button class="btn btn-secondary" type="submit" style="background-color: #FF0000; 
-                                    outline-color: #FF0000" name="delete">
-                                        Delete
-                                    </button>
+                                <a href="../process/deleteUserProcess.php?id=<?php echo $user['id'] ?>" class="btn btn-danger" style="width: 250px;" onclick="showAlert()">
+                                    Delete Akun
                                 </a>
                             </div>
                         </div>

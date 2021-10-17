@@ -1,5 +1,11 @@
 <?php
-    include '../component/sidebar.php'
+    session_start();
+    if (!$_SESSION['isLogin']) {
+        header("location: ../Login_Register/loginPage.php");
+    }else {
+        include '../component/sidebar.php';
+        include '../db/db.php';
+    }
 ?>
 
         <div class="container p-3 m-4 h-100" style="background-color: #FFFFFF; border-top: 5px solid #D65106; box-shadow:

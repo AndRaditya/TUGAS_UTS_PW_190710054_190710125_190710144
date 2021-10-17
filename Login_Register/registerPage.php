@@ -1,10 +1,17 @@
+<?php
+    session_start();
+    if(isset($_SESSION['username'])){
+        header("Location: ../Beranda.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <title>Candra</title>
+    <title>MAC Resto - Register</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -19,11 +26,10 @@
         <nav class="
           navbar navbar-light navbar-expand-md
           sticky-top
-          navigation-clean-button
-        " style="height: 80px; color: #ffffff; background: #ff7d00">
+          navigation-clean-button" style="height: 80px; color: #ffffff; background: #ff7d00">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="../image/resto.png" width="50px" height="50xp" />&nbsp;MAC
+                <a class="navbar-brand" href="../TampilanAwal.">
+                    <img src="../Images/restaurant (1).png" width="50px" height="50xp" />&nbsp;MAC
                     Resto
                 </a>
                 <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">

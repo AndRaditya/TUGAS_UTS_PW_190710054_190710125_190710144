@@ -1,3 +1,13 @@
+<?php
+    session_start();
+    if (!$_SESSION['isLogin']) {
+        header("location: ./Login_Register/loginPage.php");
+    }else {
+        include('./db/db.php');
+    }
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -12,7 +22,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
-    <title>MAC Resto - Beranda</title>
+    <title>MAC Resto</title>
 </head>
 
 <body>
@@ -35,13 +45,13 @@
                         <a class="nav-link" href="./Beranda.php">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./Menu/Menu.html">Menu</a>
+                        <a class="nav-link" href="./Menu/Menu.php">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./Profile/ProfilePage.php">Profil</a>
                     </li>
                     <li class="nav-item" style="margin-left: 16px">
-                        <a class="nav-link" href="../process/logoutProcess.php">Keluar</a>
+                        <a class="nav-link" href="./process/logoutProcess.php">Keluar</a>
                     </li>
                 </ul>
             </div>

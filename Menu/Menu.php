@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if (!$_SESSION['isLogin']) {
+        header("location: ../Login_Register/loginPage.php");
+    }
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -35,7 +43,7 @@
                         <a class="nav-link" href="../Beranda.php">Beranda</a>
                     </li>
                     <li class="nav-item active a">
-                        <a class="nav-link" href="../Menu/Menu.html">Menu</a>
+                        <a class="nav-link" href="../Menu/Menu.php">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Profile/ProfilePage.php">Profil</a>

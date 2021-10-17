@@ -71,7 +71,7 @@
                         </div>
                         <div class="content-menu " >
                             <i class="fa fa-cutlery"></i>
-                            <a href="../Menu/Menu.html" style="font-weight:600">Kembali ke Menu</a>
+                            <a href="../Menu/Menu.php" style="font-weight:600">Kembali ke Menu</a>
                         </div>
                     <hr>
                 </div>

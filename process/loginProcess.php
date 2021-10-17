@@ -15,6 +15,7 @@
                 session_start();
                 $_SESSION['isLogin'] = true;
                 $_SESSION['user'] = $user;
+                $_SESSION['username'] = $username;
 
                 echo '<script>alert("Login Success"); window.location = "../Beranda.php"</script>';
             }else {

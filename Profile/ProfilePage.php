@@ -1,10 +1,14 @@
 <?php
-    session_start();
-    include('../db/db.php');  
-    $username = $_SESSION['username'];
-    $query = mysqli_query($con, "SELECT * FROM users WHERE username = '$username'") 
-    or die(mysqli_error($con));
-    $user = mysqli_fetch_assoc($query);
+     session_start();
+     if (!$_SESSION['isLogin']) {
+         header("location: ../Login_Register/loginPage.php");
+     }else {
+        include('../db/db.php');  
+        $username = $_SESSION['username'];
+        $query = mysqli_query($con, "SELECT * FROM users WHERE username = '$username'") 
+        or die(mysqli_error($con));
+        $user = mysqli_fetch_assoc($query);
+     }
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +17,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <title>Candra</title>
+  <title>MAC Resto - Profile</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -44,7 +48,7 @@
                         <a class="nav-link" href="../Beranda.php">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Menu/Menu.html">Menu</a>
+                        <a class="nav-link" href="../Menu/Menu.php">Menu</a>
                     </li>
                     <li class="nav-item active a">
                         <a class="nav-link" href="../Profile/Profile.php">Profil</a>
@@ -82,12 +86,12 @@
         </div>
 
         <div id="main">
-            <span style="cursor: pointer;"onclick="toogleSidebar()">&#9776; </span>
+            <span style="cursor: pointer;" onclick="toogleSidebar()">&#9776; </span>
             <div></div>
             <div></div>
             <div></div>
             <div class="container-fluid" id="body-profile">
-                <div class="awalanProfile">
+                <div class="awalanProfile" style="margin-left: 48px; margin-top: 16px">
                     <h2 class="header">Profile</h2>
                     <div class="row">
                         <div class="col-lg-4 row" id="headerProfileIsi">

@@ -1,9 +1,9 @@
 <?php
-    session_start();
+    // session_start();
+    include '../component/sidebar.php';
     if (!$_SESSION['isLogin']) {
         header("location: ../Login_Register/loginPage.php");
     }else {
-        include '../component/sidebar.php';
         include '../db/db.php';
     }
 ?>

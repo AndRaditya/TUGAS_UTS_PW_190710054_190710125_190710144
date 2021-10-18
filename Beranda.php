@@ -19,6 +19,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/styleBerandaMenu.css">
     <link rel="stylesheet" href="./css/navbar.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
@@ -102,11 +103,34 @@
         </button>
     </div>
 
+    <div data-aos="zoom-in-up" data-aos-offset="0">
+        <footer>
+            <div class="container-fluid" style="background-color: #C44C06; margin-top: 60px; height: 150px;">
+                <div class="container-lg" style="height: 100%;">
+                    <div class="row" style="padding-top: 32px;">
+                        <div class="col-lg-12" align="center">
+                            <p class="d-flex justify-content-center" align="center" style="color: white;">&copy; MAC
+                                Resto
+                            </p>
+                            <div style="color: white; font-size: 14px; font-family: 'Segoe UI';">
+                                Made with Sweat and Blood.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
 
     <!-- Optional JavaScript
              jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>

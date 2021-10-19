@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    // session_start();
     // header("location: ../Menu/listPesananPage.php");
 
     echo '
@@ -20,11 +20,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
         <title>Dashboard!</title>
-
+        <link rel="icon" href="../Images/restaurant (1).png">
         <style>
             *{
                 font-family: "Quicksand", sans-serif;
             }
+
             .side-bar {
                 width: 260px;
                 background-color: #d65106;
@@ -38,19 +39,33 @@
                 text-decoration: none;
                 color: white;
             }
+
+            a:hover {
+                color: black;
+            }
+
             .menu i {
                 padding-left: 20px;
             }
+
             .menu .content-menu {
                 padding: 9px 7px;
             }
+
+            .menu .content-menu:hover{
+                color: #d65106;
+                background-color: #e3c9ba;
+            }
+
             .isActive {
                 background-color: #edc0a6 !important;
                 border-right: 8px solid #e3c9ba;
             }
+
             i{
-                color:white;
+                color: #ffffff;
             }
+
         </style>
     </head>
 

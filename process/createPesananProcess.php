@@ -1,5 +1,4 @@
 <?php
-
     if(isset($_POST['pesan'])){
         // untuk mengoneksikan dengan database dengan memanggil file db.php
         include('../db/db.php');
@@ -26,8 +25,10 @@
         if($query){
             echo
                 '<script>
-                alert("Create Data Success"); window.location = "../page/listPesananPage.php"
+                alert("Create Data Success"); window.location = "../Menu/listPesananPage.php"
                 </script>';
+                // session_start();
+                // $_SESSION['id_pesanan'] = $id_pesanan;
         }else{
             echo
                 '<script>

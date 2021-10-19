@@ -11,35 +11,21 @@
             $sql =  "UPDATE users set is_verified=1 where id=$id";
             $query = mysqli_query($con,$sql);
             if($query){
-                echo '
-            <!DOCTYPE html>
-            <html lang="en">
-
-            <head>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-                <title>Register Sukes Design</title>
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-                <link rel="stylesheet" href="../css/styleRegisterSukses.css">
-            </head>
-
-            <body>
-                <div class="text-center d-md-flex justify-content-md-center align-items-md-center">
-                    <h1>Verifikasi Sukses, silahkan login&nbsp;
-                        <a href="../TampilanAwal/tampilanAwal.php">Disini</a>
-                    </h1>
-                </div>
-            </body>
-            </html>
-            ';
+                echo '<script>alert("Verification Success"); window.location = "../Login_Register/loginPage.php"</script>';
             }else{
-                echo "VERIFIKASI GAGAL ERROR : ".$query;
+                echo "Verifikasi anda mengalami kendala : ".$query;
             }
         }else {
-            echo "CODE TIDAK DITEMUKAN ATAU TIDAK VALID";
+            echo
+                '<script>
+                alert("Data Failed");
+                </script>';
         }
     }else {
-        echo "!!!!!";
+        echo
+            '<script>
+            window.history.back()
+            </script>';
     }
 
 ?>

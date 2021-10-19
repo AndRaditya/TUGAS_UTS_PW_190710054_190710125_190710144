@@ -22,6 +22,7 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
     <title>MAC Resto - Menu</title>
+    <link rel="icon" href="../Images/restaurant (1).png">
 </head>
 
 <body>
@@ -91,7 +92,7 @@
                         aria-selected="false">Pesan</button>
                     </a> -->
                         <hr>
-                        <a href="listPesananPage.php" id="btn_passingListPesanan">
+                        <a href="../Menu/listPesananPage.php" id="btn_passingListPesanan">
                             <button class="btn btn-light" style="background-color: #d17a49; 
                             color:white; outline-color: #d17a49; width: 140px; height: 40px;">
                                 Pesan Disini
@@ -105,10 +106,10 @@
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-semua" role="tabpanel"
                             aria-labelledby="v-pills-semua-tab">
-                            <div data-aos="zoom-in" data-aos-delay="800" data-aos-offset="0">
+                            <div>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6 special-grid makanan">
-                                        <div class="gallery-single fix">
+                                        <div class="gallery-single fix" data-aos="zoom-in" data-aos-delay="400" data-aos-offset="0">
                                             <img src="../Images/nasi_goreng.jpeg" class="img-fluid" alt="Image">
                                             <div class="why-text">
                                                 <br>
@@ -120,7 +121,7 @@
                                     </div>
 
                                     <div class="col-lg-4 col-md-6 special-grid makanan">
-                                        <div class="gallery-single fix">
+                                        <div class="gallery-single fix" data-aos="zoom-in" data-aos-delay="600" data-aos-offset="0">
                                             <img src="../Images/mie_goreng.jpg" class="img-fluid" alt="Image">
                                             <div class="why-text">
                                                 <br>
@@ -132,7 +133,7 @@
                                     </div>
 
                                     <div class="col-lg-4 col-md-6 special-grid makanan">
-                                        <div class="gallery-single fix">
+                                        <div class="gallery-single fix" data-aos="zoom-in" data-aos-delay="800" data-aos-offset="0">
                                             <img src="../Images/mie_kuah.jpg" class="img-fluid" alt="Image">
                                             <div class="why-text">
                                                 <br>
@@ -144,7 +145,7 @@
                                     </div>
 
                                     <div class="col-lg-4 col-md-6 special-grid makanan">
-                                        <div class="gallery-single fix">
+                                        <div class="gallery-single fix" data-aos="zoom-in" data-aos-delay="400" data-aos-offset="0">
                                             <img src="../Images/bubur_ayam.jpg" class="img-fluid" alt="Image">
                                             <div class="why-text">
                                                 <br>
@@ -156,7 +157,7 @@
                                     </div>
 
                                     <div class="col-lg-4 col-md-6 special-grid makanan">
-                                        <div class="gallery-single fix">
+                                        <div class="gallery-single fix" data-aos="zoom-in" data-aos-delay="600" data-aos-offset="0">
                                             <img src="../Images/ayam_goreng.jpg" class="img-fluid" alt="Image">
                                             <div class="why-text">
                                                 <br>
@@ -168,7 +169,7 @@
                                     </div>
 
                                     <div class="col-lg-4 col-md-6 special-grid makanan">
-                                        <div class="gallery-single fix">
+                                        <div class="gallery-single fix" data-aos="zoom-in" data-aos-delay="800" data-aos-offset="0">
                                             <img src="../Images/ayam_bakar.jpg" class="img-fluid" alt="Image">
                                             <div class="why-text">
                                                 <br>
@@ -180,7 +181,7 @@
                                     </div>
 
                                     <div class="col-lg-4 col-md-6 special-grid minuman">
-                                        <div class="gallery-single fix">
+                                        <div class="gallery-single fix" data-aos="zoom-in" data-aos-delay="400" data-aos-offset="0">
                                             <img src="../Images/air_mineral.jpeg" class="img-fluid" alt="Image">
                                             <div class="why-text">
                                                 <br>
@@ -192,7 +193,7 @@
                                     </div>
 
                                     <div class="col-lg-4 col-md-6 special-grid minuman">
-                                        <div class="gallery-single fix">
+                                        <div class="gallery-single fix" data-aos="zoom-in" data-aos-delay="600" data-aos-offset="0">
                                             <img src="../Images/esteh_manis.jpeg" class="img-fluid" alt="Image">
                                             <div class="why-text">
                                                 <br>
@@ -204,7 +205,7 @@
                                     </div>
 
                                     <div class="col-lg-4 col-md-6 special-grid minuman">
-                                        <div class="gallery-single fix">
+                                        <div class="gallery-single fix" data-aos="zoom-in" data-aos-delay="800" data-aos-offset="0">
                                             <img src="../Images/es_teler.jpg" class="img-fluid" alt="Image">
                                             <div class="why-text">
                                                 <br>

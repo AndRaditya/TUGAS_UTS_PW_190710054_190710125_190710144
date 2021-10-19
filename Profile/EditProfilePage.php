@@ -15,6 +15,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>MAC Resto - Edit Profile</title>
+    <link rel="icon" href="../Images/restaurant (1).png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -58,7 +59,7 @@
     </nav>
 
     <div id="app">
-        <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
+        <!-- <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine"> -->
             <div id="mySidenav" class="sidenav">
                 <div class="col-md-12" style="height: 114px; ">
                     <h2 style="color: black; font-size: 24px; padding-top: 20px; font-style: bold;">Hello, </h2>
@@ -80,7 +81,7 @@
                         </button>
                     </a>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
 
         <div id="main">
@@ -88,7 +89,7 @@
             <div></div>
             <div></div>
             <div></div>
-            <div data-aos="zoom-in-up" data-aos-offset="0">
+            <div data-aos="fade-in-up" data-aos-offset="0">
                 <div class="col-xxl-10 container-fluid" id="body-profile" style="margin-top: 16px; margin-left: 16px;">
                     <form action="../process/editProfileProcess.php" method="post">
                         <input type="text" name="id" value="<?= $user['id'];?>" hidden>
@@ -143,7 +144,7 @@
         </div>
     </div>
 
-    <div data-aos="zoom-in-up" data-aos-offset="0">
+    <div data-aos="fade-in-up" data-aos-offset="0">
         <footer>
             <div class="container-fluid" style="background-color: #C44C06; height: 150px;">
                 <div class="container-lg" style="height: 100%;">

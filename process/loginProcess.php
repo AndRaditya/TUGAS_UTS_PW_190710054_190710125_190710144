@@ -7,7 +7,7 @@
     $query = mysqli_query($con,$sql);
 
     if(mysqli_num_rows($query) == 0 ){
-        echo "User Tidak Ditemukan";
+        echo '<script>alert("User not found!"); window.location = "../Login_Register/loginPage.php"</script>';
     }else {
         $user = mysqli_fetch_assoc($query);
         if(password_verify($password,$user['password'])){
@@ -19,10 +19,10 @@
 
                 echo '<script>alert("Login Success"); window.location = "../Beranda.php"</script>';
             }else {
-                echo "VERIFIKASI EMAIL TERLEBIH DAHULU";
+                echo'<script>alert("Verifikasi Email Terlebih Dahulu!");window.location = "../Login_Register/loginPage.php"</script>';
             }
         }else {
-            echo "PASSWORD SALAH !";
+            echo'<script>alert("Username or Password Invalid");window.location = "../Login_Register/loginPage.php"</script>';
         }
     }
 ?>

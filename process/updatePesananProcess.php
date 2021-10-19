@@ -1,6 +1,6 @@
 <?php      
     if(isset($_POST['edit'])){ 
-        include('../db.php');
+        include('../db/db.php');
 
         $id_pesanan = $_GET['id_pesanan'];
         $nama_pemesan = $_POST['nama_pemesan'];
@@ -13,7 +13,7 @@
         $keterangan_minuman = $_POST['keterangan_minuman'];
                         
         $queryEdit = mysqli_query($con, 
-        "UPDATE pesananan SET nama_pemesan='$nama_pemesan', no_meja='$no_meja', makanan='$makanan', 
+        "UPDATE pesanan SET nama_pemesan='$nama_pemesan', no_meja='$no_meja', makanan='$makanan', 
         jumlah_makanan='$jumlah_makanan', keterangan_makanan='$keterangan_makanan', minuman='$minuman',
         jumlah_minuman='$jumlah_minuman', keterangan_minuman='$keterangan_minuman' WHERE id=$id_pesanan") 
             or die(mysqli_error($con));

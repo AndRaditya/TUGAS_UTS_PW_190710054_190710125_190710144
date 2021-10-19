@@ -1,9 +1,12 @@
 <?php
 
+    // $host = "localhost";
+    // $user = "macresto_user";
+    // $pass = "ia5703ZGnX(;xV";
     $host = "localhost";
     $user = "root";
     $pass = "";
-    $name = "mac_resto";
+    $name = "macresto_mac_resto";
 
     $con = mysqli_connect($host, $user, $pass, $name);
 

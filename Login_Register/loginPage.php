@@ -12,7 +12,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>MAC Resto - Login</title>
-
+    <link rel="icon" href="../Images/restaurant (1).png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -59,11 +59,11 @@
         </div>
     </nav>
 
-    <section class="login-clean" style="margin-top: 68px; margin-bottom: -60px">
+    <section class="login-clean" style="margin-top: 68px; margin-bottom: -60px;background-color: #ffffff;">
         <!-- LOGIN FORM -->
-        <div data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0">
+        <div data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0" style="background-color: #ffffff;">
             <form action="../process/loginProcess.php" method="post"
-                style="width: 400px; min-width: 100px; max-width: 400px; height: 600px; max-height: 600px; min-height: 100px; padding: 60px;">
+                style="width: 400px; min-width: 100px; max-width: 400px; height: 600px; max-height: 600px; min-height: 100px; padding: 60px;box-shadow: 2px 2px 10px 10px #BABABA;">
                 <h1 style="font-family: Anton, sans-serif">Login</h1>
                 <div class="illustration">
                     <img src="../Images/login.jpeg" style="width: 150px" />
@@ -93,9 +93,9 @@
         </div>
     </section>
 
-    <div data-aos="fade-down" data-aos-offset="0" data-aos-delay="50">
+    <div data-aos="fade-in-up" data-aos-offset="0">
         <footer>
-            <div class="container-fluid" style="background-color: #C44C06; margin-top: 60px; height: 150px;">
+            <div class="container-fluid" style="background-color: #C44C06; height: 150px;">
                 <div class="container-lg" style="height: 100%;">
                     <div class="row" style="padding-top: 32px;">
                         <div class="col-lg-12" align="center">
@@ -111,12 +111,9 @@
             </div>
         </footer>
     </div>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-
-
 </body>
 </html>

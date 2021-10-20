@@ -120,7 +120,7 @@
 
     <div data-aos="fade-in-up" data-aos-offset="0">
         <footer>
-            <div class="container-fluid" style="background-color: #C44C06; height: 150px;">
+            <div class="container-fluid" style="background-color: #C44C06; height: 150px; margin-bottom: 0px;">
                 <div class="container-lg" style="height: 100%;">
                     <div class="row" style="padding-top: 32px;">
                         <div class="col-lg-12" align="center">

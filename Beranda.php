@@ -18,6 +18,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/styleBerandaMenu.css">
     <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/tampilanAwal.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -130,7 +131,7 @@
                             </div>
                             <div class="col-md-4" id="aboutUs">
                                 <div>
-                                    <img src="../Images/img-01.jpg" style="width: 400px; height: 250px">
+                                    <img src="./Images/img-01.jpg" style="width: 400px; height: 250px">
                                 </div>
                             </div>
                         </div>
@@ -164,9 +165,9 @@
     </div>
 
 
-    <div data-aos="zoom-in-up" data-aos-offset="0">
+    <div data-aos="fade-in-up" data-aos-offset="0">
         <footer>
-            <div class="container-fluid" style="background-color: #C44C06; margin-top: 60px; height: 150px;">
+            <div class="container-fluid" style="background-color: #C44C06; height: 150px; margin-bottom: 0px;">
                 <div class="container-lg" style="height: 100%;">
                     <div class="row" style="padding-top: 32px;">
                         <div class="col-lg-12" align="center">

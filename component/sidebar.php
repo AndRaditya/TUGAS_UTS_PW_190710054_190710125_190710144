@@ -73,7 +73,9 @@
         <aside >
             <div class="d-flex">
                 <div class="side-bar">
-                    <h2 class="text-light text-center pt-2">MAC Resto</h2>
+                    <a href="../Beranda.php" style="text-decoration: none;">
+                            <h2 class="text-light text-center pt-2">MAC Resto</h2>
+                    </a>
                     <hr>
                     <div class="menu">
                         <div class="content-menu " >

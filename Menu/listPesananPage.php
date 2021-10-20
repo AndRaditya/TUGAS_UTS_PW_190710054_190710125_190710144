@@ -19,7 +19,7 @@
                 <th scope="col">No. Meja</th>
                 <th scope="col">Makanan</th>
                 <th scope="col">Jumlah</th>
-                <th scope="col">K. Makanan</th>
+                <th scope="col">K. Mkanan</th>
                 <th scope="col">Minuman</th>
                 <th scope="col">Jumlah</th>
                 <th scope="col">K. Minuman</th>
@@ -31,7 +31,7 @@
                 $query = mysqli_query($con, "SELECT * FROM pesanan") or die(mysqli_error($con));
                 
                 if (mysqli_num_rows($query) == 0) {
-                    echo '<tr> <td colspan="7"> Tidak ada data </td> </tr>';
+                    echo '<tr> <td colspan="10"> Tidak ada data </td> </tr>';
                 }else{
                     $no = 1;
                     while($data = mysqli_fetch_assoc($query)){

@@ -109,7 +109,7 @@
             <div class="col-xxl-7" id="body-profile">
                 <div class="container" style="margin-bottom: 48px; margin-top: 4px" id="awalanProfile">
                     <div data-aos="fade-in-up" data-aos-delay="600" data-aos-offset="0">
-                        <h2 class="header" align="center" style="padding-top: 14px">About Us</h2>
+                        <h2 class="header" align="center" style="padding-top: 14px">Tentang Kami</h2>
                         <div class="row" style="margin-top: 32px; padding-bottom: 34px;" align="center">
                             <div class="col-md-6 justify-content-md-center" id="aboutUs" align="center"
                                 style="padding-left: 24px">

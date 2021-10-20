@@ -6,13 +6,13 @@
         if($queryDelete){
             echo
             '<script>
-            alert("Delete Success"); window.location = "../Menu/listPesananPage.php"
+            alert("Berhasil menghapus pesanan."); window.location = "../Menu/listPesananPage.php"
             </script>';
             session_destroy();
         }else{
             echo
             '<script>
-            alert("Delete Failed"); window.location = "../Menu/listPesananPage.php"
+            alert("Pesanan gagal dihapus."); window.location = "../Menu/listPesananPage.php"
             </script>';
         }
     }else {

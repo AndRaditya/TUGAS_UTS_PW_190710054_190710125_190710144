@@ -1,25 +1,25 @@
 <?php
-    if(isset($_POST['edit'])){
+    if(isset($_POST['editProfile'])){
         include ('../db/db.php');
         $id = $_POST['id'];
-        $username = $_POST['username'];
+        // $username = $_POST['username'];
         // $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $name = $_POST['name'];
-        $email = $_POST['email'];
+        // $email = $_POST['email'];
         $nomor_telepon = $_POST['nomor_telepon'];
 
-        $queryEdit=mysqli_query($con, "UPDATE users SET username='$username', 
-            name='$name', email='$email', nomor_telepon='$nomor_telepon' WHERE id=$id");
+        $queryEdit=mysqli_query($con, "UPDATE users SET  
+            name='$name', nomor_telepon='$nomor_telepon' WHERE id=$id");
 
         if($queryEdit){
             echo
                 '<script>
-                alert("Edit Success"); window.location = "../Profile/EditProfilePage.php"
+                alert("Edit profil berhasil."); window.location = "../Profile/EditProfilePage.php"
                 </script>';
         }else{
             echo
                 '<script>
-                alert("Edit Failed"); window.location = "../Profile/EditProfilePage.php"
+                alert("Edit profil gagal."); window.location = "../Profile/EditProfilePage.php"
                 </script>';
         }
 

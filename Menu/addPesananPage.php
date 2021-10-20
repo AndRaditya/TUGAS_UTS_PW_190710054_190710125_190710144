@@ -39,7 +39,6 @@
                 <label for="makanan" class="form-label">Makanan</label>
                 <select class="form-select" id="makanan" name="makanan" required>
                     <option selected disabled value="">Pilih Makanan</option>
-                    <option>-</option>
                     <option>Nasi Goreng</option>
                     <option>Mie Goreng</option>
                     <option>Mie Kuah</option>
@@ -79,7 +78,6 @@
                 <label for="minuman" class="form-label">Minuman</label>
                 <select class="form-select" id="minuman" name="minuman" required>
                     <option selected disabled value="">Pilih Minuman</option>
-                    <option>-</option>
                     <option>Air Mineral</option>
                     <option>Es Teh Manis</option>
                     <option>Es Teler</option>

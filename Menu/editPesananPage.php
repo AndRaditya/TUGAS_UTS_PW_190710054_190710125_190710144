@@ -1,20 +1,16 @@
 <?php  
     session_start();
     include '../component/sidebar.php';
-    include('../db/db.php');  
+    
     if (!$_SESSION['isLogin']) {
         header("location: ../Login_Register/loginPage.php");
     }else {
+        include('../db/db.php');  
         $id_pesanan = $_GET['id_pesanan'];
         // $id_pesanan = $_SESSION['id_pesanan'];
         $query = mysqli_query($con, "SELECT * FROM pesanan WHERE id_pesanan = '$id_pesanan'") or die(mysqli_error($con));
         $dataPesanan = mysqli_fetch_assoc($query);
     }
-    // include('../db/db.php');  
-    // $id = $_GET['id'];
-    // $id_pesanan = $_SESSION['id_pesanan'];
-    // $query = mysqli_query($con, "SELECT * FROM pesanan WHERE id_pesanan = '$id_pesanan'") or die(mysqli_error($con));
-    // $dataPesanan = mysqli_fetch_assoc($query);
 ?>
 
 <body>
@@ -171,7 +167,7 @@
         </div>
 
         <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-primary" name="edit">Buat Pesanan</button>
+            <button type="submit" class="btn btn-primary" name="editPesanan">Edit Pesanan</button>
         </div>
 
         <!-- Option 1: Bootstrap Bundle with Popper -->

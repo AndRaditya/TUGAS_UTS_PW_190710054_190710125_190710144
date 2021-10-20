@@ -3,15 +3,17 @@
     $id = $_GET['id'];
     $queryDelete = mysqli_query($con, "DELETE FROM users WHERE id=$id") or die(mysqli_error($con));
     if($queryDelete){
+        ob_start();
+        session_start();
+        session_destroy();
         echo
             '<script>
-            alert("Delete Success"); window.location = "../TampilanAwal/tampilanAwal.php"
+            alert("Profil berhasil dihapus."); window.location = "../TampilanAwal/tampilanAwal.php"
             </script>';
-            session_destroy();
     }else{
         echo
             '<script>
-            alert("Delete Failed"); window.location = "../Profile/EditProfilePage.php"
+            alert("Profil gagal dihapus."); window.location = "../Profile/EditProfilePage.php"
             </script>';
     }
 ?>

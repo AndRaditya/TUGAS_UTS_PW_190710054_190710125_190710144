@@ -127,12 +127,12 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 mt-5 text-center" style="padding-bottom: 16px">
-                                    <button class="btn btn-primary" type="submit" value="edit" name="edit"
-                                        style="width: 250px;" onclick="showAlertEdit()">
+                                    <button class="btn btn-primary" type="submit" value="edit" name="editProfile"
+                                        style="width: 250px;">
                                         Edit Akun
                                     </button>
                                     <a href="../process/deleteUserProcess.php?id=<?php echo $user['id'] ?>"
-                                        class="btn btn-danger" style="width: 250px;" onclick="showAlert()">
+                                        class="btn btn-danger" style="width: 250px;">
                                         Delete Akun
                                     </a>
                                 </div>

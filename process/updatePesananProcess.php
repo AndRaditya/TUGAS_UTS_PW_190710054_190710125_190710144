@@ -1,8 +1,8 @@
 <?php      
-    if(isset($_POST['edit'])){ 
+    if(isset($_POST['id_pesanan'])){ 
         include('../db/db.php');
 
-        $id_pesanan = $_GET['id_pesanan'];
+        $id_pesanan = $_POST['id_pesanan'];
         $nama_pemesan = $_POST['nama_pemesan'];
         $no_meja = $_POST['no_meja'];
         $makanan = $_POST['makanan'];
@@ -15,24 +15,29 @@
         $queryEdit = mysqli_query($con, 
         "UPDATE pesanan SET nama_pemesan='$nama_pemesan', no_meja='$no_meja', makanan='$makanan', 
         jumlah_makanan='$jumlah_makanan', keterangan_makanan='$keterangan_makanan', minuman='$minuman',
-        jumlah_minuman='$jumlah_minuman', keterangan_minuman='$keterangan_minuman' WHERE id=$id_pesanan") 
+        jumlah_minuman='$jumlah_minuman', keterangan_minuman='$keterangan_minuman' WHERE id_pesanan=$id_pesanan") 
             or die(mysqli_error($con));
+
+        // $queryEdit=mysqli_query($con, 
+        // "UPDATE pesanan SET nama_pemesan='$nama_pemesan', no_meja='$no_meja', makanan='$makanan', 
+        // jumlah_makanan='$jumlah_makanan', keterangan_makanan='$keterangan_makanan', minuman='$minuman',
+        // jumlah_minuman='$jumlah_minuman', keterangan_minuman='$keterangan_minuman' WHERE id_pesanan=$id_pesanan");
+
         if($queryEdit){           
             echo                 
-            '<script>                    
-            alert("Edit Success"); window.location = ".../Page/listPesananPage.php"                
-            </script>';        
+                '<script>                    
+                alert("Edit pesanan berhasil."); window.location = "../Menu/listPesananPage.php"                
+                </script>';        
         }else{           
             echo                 
-            '<script>                    
-            alert("Edit Failed"); window.location = ".../Page/listPesananPage.php"                
-            </script>';       
-        }   
-                                        
+                '<script>                    
+                alert("Edit pesanan gagal."); window.location = "../Menu/listPesananPage.php"                
+                </script>';       
+        }                    
     }else{        
         echo         
-        '<script>            
-        window.history.back()        
-        </script>';    
+            '<script>            
+            window.history.back()        
+            </script>';    
     }
 ?>

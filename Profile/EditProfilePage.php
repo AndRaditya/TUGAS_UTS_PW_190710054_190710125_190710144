@@ -107,7 +107,7 @@
                                     <div class="form-group">
                                         <b style="font-size: 20px;">Email</b>
                                         <input class="form-control" id="email" name="email" aria-describedby="emailHelp"
-                                            type="email" value="<?php echo $user['email']; ?>" required>
+                                            type="email" value="<?php echo $user['email']; ?>" required disabled>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12">
@@ -123,7 +123,7 @@
                                         <b style="font-size: 20px;">Username</b>
                                         <input class="form-control" id="username" name="username"
                                             aria-describedby="emailHelp" value="<?php echo $user['username']; ?>"
-                                            required>
+                                            required disabled>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 mt-5 text-center" style="padding-bottom: 16px">

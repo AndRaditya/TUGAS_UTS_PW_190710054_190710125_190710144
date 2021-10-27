@@ -35,7 +35,7 @@
         <div class="mb-3">
             <label for="validationNoMeja" class="form-label">Nomor Meja</label>
             <div class="input-group has-validation">
-                <input type="text" class="form-control" id="validationNoMeja" name="no_meja"
+                <input type="number" class="form-control" id="validationNoMeja" name="no_meja"
                     placeholder="Nomor meja yang ditempati" aria-describedby="inputGroupPrepend"
                     value="<?php echo $dataPesanan['no_meja']; ?>" required>
                 <div class="invalid-feedback">
@@ -83,7 +83,7 @@
         <div class="mb-3">
             <label for="jumlah_makanan" class="form-label">Jumlah Makanan</label>
             <div class="input-group has-validation">
-                <input type="text" class="form-control" id="jumlah_makanan" name="jumlah_makanan"
+                <input type="number" class="form-control" id="jumlah_makanan" name="jumlah_makanan"
                     placeholder="1, 2, 3, dst." aria-describedby="inputGroupPrepend"
                     value="<?php echo $dataPesanan['jumlah_makanan']; ?>" required>
                 <div class="invalid-feedback">
@@ -144,7 +144,7 @@
         <div class="mb-3">
             <label for="jumlah_minuman" class="form-label">Jumlah Minuman</label>
             <div class="input-group has-validation">
-                <input type="text" class="form-control" id="jumlah_minuman" name="jumlah_minuman"
+                <input type="number" class="form-control" id="jumlah_minuman" name="jumlah_minuman"
                     placeholder="1, 2, 3, dst." aria-describedby="inputGroupPrepend"
                     value="<?php echo $dataPesanan['jumlah_minuman']; ?>" required>
                 <div class="invalid-feedback">

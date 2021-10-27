@@ -16,7 +16,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAC Resto - Profile</title>
     <link rel="icon" href="../Images/restaurant (1).png">
     <!-- Bootstrap CSS -->
@@ -94,21 +95,25 @@
             <div></div>
             <div></div>
             <div data-aos="fade-in-up" data-aos-offset="0">
-                <div class="col-xxl-10" id="body-profile" style="pading-bottom: 16px">
+                <div class="col-xxl-10 col-md-5 offset-md-2 col-xxl-6 offset-lg-0" id="body-profile" style="width: 100%">
                     <div class="awalanProfile" style="margin-left: 48px; margin-top: 16px">
                         <h2 class="header">Profile</h2>
                         <div class="row">
-                            <div class="col-lg-4 row" id="headerProfileIsi">
-                                <b style="font-size: 20px;">Nama</b>
+                            <div class="col-lg-6 col-md-5 offset-md-2 col-md-6 offset-lg-0" id="headerProfileIsi">
+                                <p class="h2" style="font-size: 20px; padding-bottom: 16px">Nama</p>
+                                <p class="h2" style="font-size: 20px; padding-bottom: 16px">Email</p>
+                                <p class="h2" style="font-size: 20px; padding-bottom: 16px">Nomor Telepon</p>
+                                <p class="h2" style="font-size: 20px; padding-bottom: 16px">Username</p>
+                                <!-- <b style="font-size: 20px;">Nama</b>
                                 <b style="font-size: 20px;">Email</b>
                                 <b style="font-size: 20px;">Nomor Telepon</b>
-                                <b style="font-size: 20px;">Username</b>
+                                <b style="font-size: 20px;">Username</b> -->
                             </div>
-                            <div class="col-lg-6" id="isiProfile">
-                                <p style="font-size: 20px"><?php echo $user['name'] ?></p>
-                                <p style="font-size: 20px"><?php echo $user['email'] ?></p>
-                                <p style="font-size: 20px"><?php echo $user['nomor_telepon'] ?></p>
-                                <p style="font-size: 20px"><?php echo $user['username'] ?></p>
+                            <div class="col-lg-6 col-md-5 offset-md-2 col-md-6 offset-lg-0" id="isiProfile" style="margin-top: 28px">
+                                <p style="font-size: 20px;  padding-bottom: 6px"><?php echo $user['name'] ?></p>
+                                <p style="font-size: 20px;  padding-bottom: 6px"><?php echo $user['email'] ?></p>
+                                <p style="font-size: 20px;  padding-bottom: 6px"><?php echo $user['nomor_telepon'] ?></p>
+                                <p style="font-size: 20px;  padding-bottom: 6px"><?php echo $user['username'] ?></p>
                             </div>
                         </div>
                     </div>

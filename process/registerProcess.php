@@ -20,7 +20,7 @@
     $sql = "SELECT * FROM users where email='$email'";
     $query = mysqli_query($con,$sql);
     if(mysqli_num_rows($query) > 0){
-        echo '<script>alert("Email sudah terdaftar");</script>';
+        echo '<script>alert("Email sudah terdaftar");window.location = "../Login_Register/registerPage.php"</script>';
     }else {
         $sql = "INSERT INTO users (name,email,username,nomor_telepon,password,verif_code)VALUES('$name','$email','$username','$nomor_telepon','$password','$code')";
         $query = mysqli_query($con,$sql);
@@ -85,7 +85,7 @@
         if (!$mail->send()) {
             echo 'Mailer Error: '. $mail->ErrorInfo;
         } else {
-             echo '<script>alert("Register Success, Silahkan Verifikasi Email terlebih dahulu!"); window.location = "../Login_Register/loginPage.php"</script>';
+             echo '<script>alert("Register Sukses, Silahkan Verifikasi Email terlebih dahulu!"); window.location = "../Login_Register/loginPage.php"</script>';
             //Section 2: IMAP
             //Uncomment these to save your message in the 'Sent Mail' folder.
             #if (save_mail($mail)) {

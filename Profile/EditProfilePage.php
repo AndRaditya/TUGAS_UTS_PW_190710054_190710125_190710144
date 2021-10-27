@@ -13,7 +13,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAC Resto - Edit Profile</title>
     <link rel="icon" href="../Images/restaurant (1).png">
     <!-- Bootstrap CSS -->
@@ -90,7 +90,7 @@
             <div></div>
             <div></div>
             <div data-aos="fade-in-up" data-aos-offset="0">
-                <div class="col-xxl-10 container-fluid" id="body-profile" style="margin-top: 16px; margin-left: 16px;">
+                <div class="col-xxl-10 col-lg-10 offset-xxl-2 col-xxl-6 offset-lg-0 container-fluid" id="body-profile" style="margin-top: 16px; margin-left: 16px;">
                     <form action="../process/editProfileProcess.php" method="post">
                         <input type="text" name="id" value="<?= $user['id'];?>" hidden>
                         <div class="awalanProfile" style="margin-left: 48px; margin-top: 16px">
@@ -113,7 +113,7 @@
                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
                                         <b style="font-size: 20px;">Nomor Telepon</b>
-                                        <input class="form-control" id="nomor_telepon" name="nomor_telepon"
+                                        <input type="number" class="form-control" id="nomor_telepon" name="nomor_telepon"
                                             aria-describedby="emailHelp" value="<?php echo $user['nomor_telepon']; ?>"
                                             required>
                                     </div>
@@ -126,13 +126,13 @@
                                             required disabled>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 col-sm-12 col-md-12 mt-5 text-center" style="padding-bottom: 16px">
+                                <div class="col-xs-12 col-sm-12 offset-md-12 offset-mt-5 text-center" style="padding-bottom: 16px">
                                     <button class="btn btn-primary" type="submit" value="edit" name="editProfile"
-                                        style="width: 250px;">
+                                        style="width: 250px; margin-bottom: 16px">
                                         Edit Akun
                                     </button>
                                     <a href="../process/deleteUserProcess.php?id=<?php echo $user['id'] ?>"
-                                        class="btn btn-danger" style="width: 250px;">
+                                        class="btn btn-danger" style="width: 250px; margin-bottom: 16px">
                                         Delete Akun
                                     </a>
                                 </div>

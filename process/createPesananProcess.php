@@ -25,14 +25,14 @@
         if($query){
             echo
                 '<script>
-                alert("Create Data Success"); window.location = "../Menu/listPesananPage.php"
+                alert("Berhasil membuat pesanan."); window.location = "../Menu/listPesananPage.php"
                 </script>';
                 // session_start();
                 // $_SESSION['id_pesanan'] = $id_pesanan;
         }else{
             echo
                 '<script>
-                alert("Create Data Failed");
+                alert("Gagal membuat pesanan.");
                 </script>';
         }
     }else{

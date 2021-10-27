@@ -1,10 +1,26 @@
 <?php
+    // session_start();
+    // if (!$_SESSION['isLogin']) {
+    //     header("location: ./Login_Register/loginPage.php");
+    // }else {
+    //     include('./db/db.php');
+    // }
+
     session_start();
+    include('./db/db.php');
     if (!$_SESSION['isLogin']) {
         header("location: ./Login_Register/loginPage.php");
-    }else {
-        include('./db/db.php');
+    }else  {
+        // header("location: ./Beranda.php");
     }
+
+    // session_start();
+    // // include('./db/db.php');
+    // if (!$_SESSION['isLogin']) {
+    //     header("location: ./Login_Register/loginPage.php");
+    // }else if($_SESSION['isLogin'])  {
+    //     header("location: ./Beranda.php");
+    // }
 ?>
 
 <!doctype html>
@@ -13,7 +29,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/styleBerandaMenu.css">
@@ -143,9 +159,10 @@
 
 
     <div data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0">
-        <div align="center">
-            <div class="col-xxl-8" style="border-radius: 10px;">
-                <div class="container" style="margin-bottom: 48px; margin-top: 4px" id="awalanProfile">
+        <center>
+            <div class="col-xxl-10"
+                style="border-radius: 10px;">
+                <!-- <div class="container" style="margin-bottom: 48px; margin-top: 4px" id="awalanProfile"> -->
                     <div data-aos="zoom-in" data-aos-delay="500" data-aos-offset="0">
                         <h2 class="header" align="center" style="padding-top: 14px">Temukan Kami</h2>
                         <div class="row" style="margin-top: 32px; padding-bottom: 34px;" align="center">
@@ -154,14 +171,14 @@
                             <div data-aos="fade-in-up" data-aos-delay="600" data-aos-offset="0">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4592.382067199909!2d110.4137818151659!3d-7.775651094396195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59f25fd37a59%3A0x56c8853d59823fa1!2sMc&#39;B%20(Bukan%20Babi%20Biasa)!5e1!3m2!1sen!2sid!4v1634604366165!5m2!1sen!2sid"
-                                    width="1000" height="600" style="border:0;" allowfullscreen=""
+                                    width="800" height="600" style="border-radius: 10px;" allowfullscreen=""
                                     loading="lazy"></iframe>
                             </div>
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
-        </div>
+        </center>
     </div>
 
 

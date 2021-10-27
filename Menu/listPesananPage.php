@@ -19,7 +19,7 @@
                 <th scope="col">No. Meja</th>
                 <th scope="col">Makanan</th>
                 <th scope="col">Jumlah</th>
-                <th scope="col">K. Mkanan</th>
+                <th scope="col">K. Makanan</th>
                 <th scope="col">Minuman</th>
                 <th scope="col">Jumlah</th>
                 <th scope="col">K. Minuman</th>

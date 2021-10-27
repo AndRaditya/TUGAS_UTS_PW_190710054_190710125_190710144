@@ -65,7 +65,7 @@ body {
 #main {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
     padding: 10px 20px;
     font-size: 36px;
 }
@@ -174,3 +174,10 @@ body {
     margin-left: 200px;
     font-family: 'Segoe UI';
 } */
+
+#main .awalanProfile {
+    margin-top: 16px;
+    margin-left: 200px;
+    font-family: 'Segoe UI';
+    
+} 
